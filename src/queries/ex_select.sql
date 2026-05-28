@@ -6,3 +6,4 @@ SELECT nome AS produto, preco AS valor FROM produtos;
 
 -- 3. Seleciona os status distintos dos pedidos (sem repetições)
 SELECT DISTINCT status FROM pedidos;
+ 
