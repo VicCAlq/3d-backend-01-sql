@@ -19,51 +19,41 @@ A pasta `docs` contém arquivos no formato markdown (igual a este) para consulta
 
 ## Formato da atividade
 
-Esta atividade será realizada com seu grupo de Projeto Integrado. Cada grupo terá sua própria branch para envio dos arquivos, e o nome da branch será o nome dos integrantes do time.
+Antes de iniciar a atividade, baixe o arquivo `lojinha.db` na pasta `/src/` e abra no DBeaver.
+  
+A pasta `/src/` contém um banco de dados SQLite chamado `lojinha.db` e os scripts a seguir:
+  
+- Pasta `/src/tabelas/`: Scripts de criação de cada uma das tabelas
+    - `clientes.sql`: Criação da tabela de clientes
+    - `pedidos.sql`: Criação da tabela de pedidos
+    - `produtos.sql`: Criação da tabela de produtos
+    - `itens_pedido.sql`: Criação da tabela que liga produtos com pedidos
+- Pasta `/src/dados/`: Scripts que inserem  dados em cada uma das tabelas
+    - `dados_clientes.sql`: Adiciona itens na tabela de clientes
+    - `dados_pedidos.sql`: Adiciona itens na tabela de pedidos
+    - `dados_produtos.sql`: Adiciona itens na tabela de produtos
+    - `dados_itens_pedido.sql`: Adiciona conexões entre produtos e pedidos
+- Pasta `/src/queries/`: Scripts que dão exemplos de comandos de consulta
+    - `ex_select.sql`: Exemplos do comando `select`
+    - `ex_where.sql`: Exemplos da restrição `where`
+    - `ex_order_by.sql`: Exemplos da filtragem `order by`
+    - `ex_group_by.sql`: Exemplos da filtragem `group by`
+    - `ex_join.sql`: Exemplos da união de tabelas `join`
+    - `ex_update.sql`: Exemplos do comando `update`
+    - `ex_delete.sql`: Exemplos do comando `delete`
+  
+A pasta `/src/` também contém um diagrama do banco de dados com a estrutura dele (arquivo `diagrama.md`), e o arquivo da atividade chamado `respostas.js`.
+  
+Para fazer a atividade, abra o arquivo `respostas.js` e responda as questões de cada enunciado. São 4 no total, sendo necessárias 4 questões corretas para 100% de aproveitamento na atividade.
+  
+Usem o material de referência da pasta `/src/queries/` para responder as atividades, e testem os comandos que vocês utilizarem no DBeaver com o banco de dados `lojinha.db` aberto lá.
 
-Utilizem o arquivo já existente `escola.db`. Este arquivo já possui uma tabela chamada `exemplo` que vocês podem utilizar para experimentar os comandos de SQL.
+As respostas devem ser escritas no arquivo `respostas.js` da sua versão (branch) do código neste repositório como nas atividades de revisão de JavaScript anteriores. Lembre-se de fazer o envioa partir da sua própria conta do GitHub, ou a atividade será desqualificada.
 
-A atividade consiste na elaboração de um banco de dados de uma escola. Este banco de dados deve contêr as seguintes tabelas:
-
-1. `professores`: Tabela dos professores da escola. Deve possuir as seguintes colunas:
-    - `id_prof`: Identificador interno do banco de dados. Chave primária, número inteiro, auto incrementada.
-    - `nome`: Nome do professor.
-    - `matéria`: Matéria para qual o professor dá aulas.
-2. `turma`: Tabela das turmas. Deve possuir as colunas:
-    - `id_turma`: Identificador interno do banco de dados. Chave primária, número inteiro, auto incrementada.
-    - `nome_turma`: Ano e Letra, exemplo: 3E.
-    - `tipo`: "Programação" ou "Design".
-3. `alunos`: Lista de alunos de todas as turmas, deve possuir as colunas:
-    - `id_aluno`: Identificador interno do banco de dados. Chave primária, número inteiro, auto incrementada.
-    - `nome`: Nome do aluno.
-    - `id_turma`: ID da turma da qual faz parte. Chave estrangeira.
-4. `notas`: Lista de todas as notas de todos os alunos. Deve possuir as colunas:
-    - `id_nota`: Identificador interno do banco de dados. Chave primária, número inteiro, auto incrementada.
-    - `id_aluno`: ID do aluno que tirou esta nota. Chave estrangeira.
-    - `materia`: Nome da matéria.
-    - `nota`: Valor da nota (número com casas decimais).
-
-A escola dá aula das seguintes matérias:
-1. Português
-2. Matemática
-3. História
-4. Geografia
-5. Sociologia
-6. Biologia
-7. Química
-8. Física
-9. Inglês
-10. Educação Física
-11. Programação
-12. Design
-
-- Preencha este banco de dados com pelo menos dois professores (fictícios) para cada matéria.
-- A escola tem duas turmas para cada ano do ensino médio: Uma turma de Design e uma de Programação.
-- Cada turma deve possuir entre 15 e 20 alunos (fictícios).
 
 ## Para responder as atividades
 
-1. Cada grupo de Projeto Integrado possui uma "branch" cujo nome corresponde ao nome de cada integrande do grupo. Ao clicar no botão com o texto "master" acima da lista de arquivos deste projeto, aparece um menu onde você deve escolher a "branch" cujo nome é o mesmo que o nome de seu usuário no GitHub.  
+1. Cada aluno possui uma "branch" cujo nome corresponde ao nome de usuário de cada aluno. Ao clicar no botão com o texto "master" acima da lista de arquivos deste projeto, aparece um menu onde você deve escolher a "branch" cujo nome é o mesmo que o nome de seu usuário no GitHub.  
 ![Botão para selecionar branches](./assets/readme/branch-01.png)  
 ![Menu para selecionar branches](./assets/readme/branch-02.png)  
 
