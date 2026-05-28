@@ -4,7 +4,7 @@
   * que moram em Jaboatão e Olinda
   */
 export const r1 = `select * from clientes
-where cidade in ('Jaboatão', 'Olinda');`
+where cidade in ('Jaboatão dos Guararapes', 'Olinda');`
 
 /* Exercício 2:
   * Escreva entre as áspas da variável "r2" o comando 
