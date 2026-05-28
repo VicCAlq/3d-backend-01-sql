@@ -5,7 +5,7 @@
   */
 export const r1 = `SELECT * FROM clientes
 WHERE cidade in 
-('Recife', 'Olinda');
+('Jaboatão dos Guararapes', 'Olinda');
 `
 
 /* Exercício 2:
@@ -14,7 +14,7 @@ WHERE cidade in
   * de cada item, em ordem do mais caro par ao mais barato
   */
 export const r2 = `SELECT * FROM produtos
-ORDER BY preco asc;`
+ORDER BY preco desc;`
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
