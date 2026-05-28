@@ -18,8 +18,8 @@ export const r2 = `select * from produtos order by preco desc;`
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
-  * para filtrar os pedidos entre os meses de Outubro (10)
-  * e Novembro (11)
+  * para filtrar os pedidos entre os dias 12 e 18 de dezembro
+  * 
   */
 export const r3 = `
 select * from pedidos
