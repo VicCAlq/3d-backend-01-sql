@@ -20,7 +20,8 @@ order by preco desc;`
   * para filtrar os pedidos entre os meses de Dezembro (12)
   * e Dezembro (18)
   */
-export const r3 = ``
+export const r3 = `select * FROM  pedidos
+where data_pedido`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
