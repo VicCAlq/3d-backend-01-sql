@@ -31,5 +31,10 @@ between '2025-12-12' and '2025-12-18';`
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `select 
+*
+ FROM produtos p 
+ left join itens_pedido ip
+ on p.id = p.id
+ group by p.id;`
 
