@@ -3,7 +3,7 @@
   * para selecionar na tabela cliente todos os clientes 
   * que moram em Jaboatão e Olinda
   */
-export const r1 = `select * from clientes where cidade("Jaboatão dos Guararapes", "Olinda");`
+export const r1 = `select * from clientes where cidade in ("Jaboatão dos Guararapes", "Olinda");`
 
 /* Exercício 2:
   * Escreva entre as áspas da variável "r2" o comando 
@@ -24,5 +24,5 @@ export const r3 = `select * from pedidos where data_pedido between "2025-12-12" 
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `select * from produtos inner join pedidos;`
 
