@@ -25,7 +25,9 @@ export const r3 = `select data_pedido from pedidos where data_pedido between '20
   */
 export const r4 = `select 
 	*
-from produtos p 
-INNER join itens_pedido ip
-on p.id = ip.produto_id;`
-
+select 
+ip.*,
+p.*
+from pedidos p
+left join itens_pedido ip
+on p.itens_pedidos = ip.id; '
