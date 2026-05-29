@@ -21,7 +21,8 @@ order by preco desc;`
   * e Dezembro (18)
   */
 export const r3 = `select * FROM  pedidos
-where data_pedido`
+where data_pedido
+between '2025-12-12' and '2025-12-18';`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
