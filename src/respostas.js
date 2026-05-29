@@ -15,20 +15,25 @@ where cidade in
   */
 export const r2 = `select * 
 from produtos 
-order by preco des;`
+order by preco des,;`
 
 /* Exercício 3:
   * Escreva entre as áspas da variável "r3" o comando 
   * para filtrar os pedidos entre os meses de DEZEMBRO (11)
   * e DEZEMBRO (18)
   */
-export const r3 = `select data_pedido from pedidos 
-bettwer ("2025-12-11" - "2025-12-18")`
+export const r3 = `
+select data_pedido from pedidos
+where data_pedido
+between '2025-12-12' and '2025-12-18'
+`
 
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
   * a tabela de pedidos
   */
-export const r4 = ``
+export const r4 = `select 
+*
+from pedidos p left join itens_pedido i`
 
