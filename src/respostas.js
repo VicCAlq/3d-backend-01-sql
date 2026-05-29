@@ -1,5 +1,5 @@
 /* Exercício 1:
-  * Escreva entre as áspas da variável "r1" o comando 
+  * Escreva entre as aspas da variável "r1" o comando 
   * para selecionar na tabela cliente todos os clientes 
   * que moram em Jaboatão e Olinda
   */
