@@ -30,7 +30,15 @@ between '2025-12-12' and '2025-12-18'; `
 /* Exercício 1:
   * Escreva entre as áspas da variável "r4" o comando 
   * para juntar informações da tabelas de produtos com
-  * a tabela de pedidos
+  * a tabela de itens_pedidos
   */
-export const r4 = ``
+export const r4 = `
+
+select 
+ip.*,
+p.*
+from pedidos p
+left join itens_pedido ip
+on p.itens_pedidos = ip.id; 
+`
 
